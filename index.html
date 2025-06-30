@@ -1,0 +1,238 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>TJFRÔ • Curso de Tranças Afro</title>
+
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700&family=Poppins:wght@300;400;500&display=swap" rel="stylesheet">
+
+  <style>
+    :root {
+      /* Paleta principal */
+      --terra: #7a3b1c;
+      --terra-light: #c86433;
+      --purple: #6a2a64;
+      --gold: #c6ab70;
+      --font-heading: "Montserrat", sans-serif;
+      --font-body: "Poppins", sans-serif;
+    }
+    * { box-sizing: border-box; }
+    body {
+      margin: 0;
+      font-family: var(--font-body);
+      color: #222;
+      line-height: 1.6;
+      background: #f8f4f0;
+    }
+    header {
+      background: var(--terra);
+      color: #fff;
+      padding: 20px 10%;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+    .logo img { height: 44px; }
+    nav a {
+      color: #fff;
+      margin-left: 24px;
+      text-decoration: none;
+      font-weight: 600;
+      transition: opacity 0.2s;
+    }
+    nav a:hover { opacity: 0.8; }
+    .hero {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      text-align: center;
+      padding: 96px 10% 80px;
+    }
+    .hero h1 {
+      font-family: var(--font-heading);
+      font-size: 2.8rem;
+      line-height: 1.2;
+      color: var(--terra);
+      margin: 0 0 16px;
+    }
+    .cta-btn {
+      background: var(--terra);
+      color: #fff;
+      border: none;
+      border-radius: 6px;
+      padding: 16px 32px;
+      font-size: 1rem;
+      cursor: pointer;
+      transition: background 0.2s, transform 0.1s;
+    }
+    .cta-btn:hover { background: var(--terra-light); }
+    .cta-btn:active { transform: scale(0.98); }
+    .section {
+      padding: 72px 10%;
+      background: #fff;
+    }
+    .section:nth-of-type(even) { background: #f8f4f0; }
+    .section h2 {
+      font-family: var(--font-heading);
+      color: var(--terra);
+      font-size: 1.9rem;
+      margin-top: 0;
+    }
+    .course-outline {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+      gap: 24px;
+      margin-top: 32px;
+    }
+    .card {
+      background: #fff;
+      border: 1px solid #eee;
+      border-radius: 10px;
+      padding: 24px;
+      box-shadow: 0 2px 6px rgba(0, 0, 0, 0.05);
+    }
+    .card h3 {
+      font-family: var(--font-heading);
+      font-size: 1.2rem;
+      margin-top: 0;
+      color: var(--terra);
+    }
+    .instructor {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 24px;
+      align-items: center;
+      margin-top: 32px;
+    }
+    .instructor img {
+      width: 140px;
+      height: 140px;
+      border-radius: 50%;
+      object-fit: cover;
+      flex-shrink: 0;
+    }
+    .testimonials {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 24px;
+      margin-top: 32px;
+    }
+    .testimonial {
+      background: #fff;
+      border-left: 6px solid var(--terra);
+      padding: 24px;
+      flex: 1 1 280px;
+      box-shadow: 0 2px 6px rgba(0, 0, 0, 0.05);
+    }
+    .enroll {
+      background: var(--purple);
+      color: #fff;
+      text-align: center;
+      padding: 80px 10%;
+    }
+    .enroll h2 { margin-top: 0; }
+    footer {
+      background: #111;
+      color: #fff;
+      text-align: center;
+      padding: 40px 10%;
+      font-size: 0.9rem;
+    }
+    @media (max-width: 640px) {
+      header { flex-direction: column; }
+      nav { margin-top: 12px; }
+      nav a { margin-left: 16px; }
+      .hero h1 { font-size: 2rem; }
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <div class="logo"><img src="logo-tjfro.png" alt="TJFRÔ – Logo" /></div>
+    <nav>
+      <a href="#sobre">Sobre</a>
+      <a href="#conteudo">Conteúdo</a>
+      <a href="#instrutora">Instrutora</a>
+      <a href="#inscricao">Inscrição</a>
+    </nav>
+  </header>
+
+  <section class="hero">
+    <h1>Curso de Tranças Afro<br />Eleve sua Arte &amp; Identidade</h1>
+    <p>Aulas 100% presenciais com técnica, cultura e acompanhamento de verdade.</p>
+    <button class="cta-btn" onclick="document.getElementById('inscricao').scrollIntoView({behavior: 'smooth'});">Quero me inscrever</button>
+  </section>
+
+  <section class="section" id="sobre">
+    <h2>Por que aprender com a TJFRÔ?</h2>
+    <p>Somos especialistas em tranças afro‑brasileiras, valorizando <strong>autoestima</strong>, <strong>ancestralidade</strong> e <strong>autenticidade</strong>. Nosso método combina teoria histórica, técnicas atualizadas e atenção a cada detalhe para que você conquiste clientes e expresse seu poder criativo.</p>
+  </section>
+
+  <section class="section" id="conteudo">
+    <h2>Conteúdo do Curso</h2>
+    <div class="course-outline">
+      <div class="card">
+        <h3>Módulo 1 — Fundamentos</h3>
+        <p>História das tranças, cuidados pré‑trança, biossegurança e materiais.</p>
+      </div>
+      <div class="card">
+        <h3>Módulo 2 — Tranças Básicas</h3>
+        <p>Técnicas iniciais e principais variações para atendimento profissional.</p>
+      </div>
+      <div class="card">
+        <h3>Módulo 3 — Técnicas Avançadas</h3>
+        <p>Grade de modelos que você define o que quer aprender.</p>
+      </div>
+      <div class="card">
+        <h3>Módulo 4 — Gestão &amp; Negócios</h3>
+        <p>Precificação, atendimento, fotografia e marketing para trancistas.</p>
+      </div>
+    </div>
+
+    <div class="card" style="margin-top:40px">
+      <h3>O que está incluso:</h3>
+      <p>Apostila e materiais iniciais — você não precisará se preocupar com os materiais para o curso. Além disso, indicamos onde comprar os materiais para essa nova jornada!</p>
+    </div>
+  </section>
+
+  <section class="section" id="instrutora">
+    <h2>Quem ensina</h2>
+    <div class="instructor card">
+      <img src="instrutora.jpg" alt="Talita Juliana" />
+      <div>
+        <h3>Talita Juliana F. R. Oliveira</h3>
+        <p>Com mais de 7 anos de experiência e dezenas de clientes atendidos, Talita é referência em tranças afro e fundadora da TJFRÔ. Suas aulas unem técnica, ancestralidade e sensibilidade.</p>
+      </div>
+    </div>
+  </section>
+
+  <section class="section">
+    <h2>Depoimentos</h2>
+    <div class="testimonials">
+      <div class="testimonial">
+        <p>“Aprender com a Talita transformou meu negócio. Multipliquei meu faturamento e hoje tenho agenda cheia!”</p>
+        <strong>&mdash; Ana Paula</strong>
+      </div>
+      <div class="testimonial">
+        <p>“O curso vai além da técnica; resgatou minha confiança e conexão com minhas raízes.”</p>
+        <strong>&mdash; Karine Silva</strong>
+      </div>
+    </div>
+  </section>
+
+  <section class="enroll" id="inscricao">
+    <h2>Inscreva‑se agora e garanta seu lugar</h2>
+    <p>Vagas limitadas. Garanta sua vaga preenchendo o formulário oficial:</p>
+    <a class="cta-btn" href="https://3znt7o97.forms.app/cursotj" target="_blank">Fazer inscrição</a>
+  </section>
+
+  <footer>
+    <p>&copy; 2025 TJFRÔ — A Arte de Fazer Tranças. Todos os direitos reservados.</p>
+    <p>Email: <a href="mailto:talitajulianatrancas@gmail.com" style="color:#c6ab70; text-decoration:none;">talitajulianatrancas@gmail.com</a> • Instagram: <a href="https://instagram.com/talitajulianatrancas" style="color:#c6ab70; text-decoration:none;">@talitajulianatrancas</a></p>
+  </footer>
+</body>
+</html>
